@@ -9,7 +9,7 @@ val Alex = Character("Alex")
 data class Item(val name: String)
 
 class GameState {
-    val shovel = Item("Shovel")
+    private val shovel = Item("Shovel")
 
     private val _inventory = mutableListOf<Item>()
     val inventory: List<Item> = _inventory
