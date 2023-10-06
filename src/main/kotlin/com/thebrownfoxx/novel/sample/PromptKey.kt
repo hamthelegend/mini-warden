@@ -1,4 +1,4 @@
-package novel.sample
+package com.thebrownfoxx.novel.sample
 
 enum class PromptKey {
     SteveHorny,

@@ -1,6 +1,6 @@
 @file:Suppress("CanBeParameter", "MemberVisibilityCanBePrivate")
 
-package novel
+package com.thebrownfoxx.novel
 
 class IllegalPromptKeyException(val key: Any) :
         IllegalArgumentException("There is no prompt with the key $key.")
@@ -14,8 +14,8 @@ class Novel<K : Any>(
     var currentPrompt = prompts[firstPromptKey] ?: throw IllegalPromptKeyException(firstPromptKey)
         private set
 
-    fun choose(choice: Choice<K>) {
-        val key = choice.actionWithPromptKey()
+    fun doAction(action: Action<K>) {
+        val key = action.actionWithPromptKey()
         currentPrompt = prompts[key] ?: throw IllegalPromptKeyException(key)
     }
 }
