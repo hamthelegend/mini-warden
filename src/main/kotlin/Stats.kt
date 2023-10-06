@@ -2,7 +2,7 @@ import kotlin.math.min
 
 enum class StatType {
     Strength,
-    Health,
+    Endurance,
     Agility,
     Sanity,
 }

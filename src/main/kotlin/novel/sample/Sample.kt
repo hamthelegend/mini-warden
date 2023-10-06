@@ -1,6 +1,7 @@
-package novel
+package novel.sample
 
-import novel.PromptKey.*
+import novel.*
+import novel.sample.PromptKey.*
 
 val Narrator = Character("Narrator")
 val Steve = Character("Steve")

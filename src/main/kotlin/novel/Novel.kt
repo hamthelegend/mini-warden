@@ -2,9 +2,6 @@
 
 package novel
 
-class IllegalChoiceException(val choice: String, val prompt: String) :
-        IllegalArgumentException("There is no choice $choice in $prompt.")
-
 class IllegalPromptKeyException(val key: Any) :
         IllegalArgumentException("There is no prompt with the key $key.")
 

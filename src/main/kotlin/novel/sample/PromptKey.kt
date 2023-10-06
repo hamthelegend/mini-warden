@@ -1,4 +1,4 @@
-package novel
+package novel.sample
 
 enum class PromptKey {
     SteveHorny,
